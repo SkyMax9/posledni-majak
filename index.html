@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a1a3d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <title>Poslední maják</title>
+    <script type="module" crossorigin src="./assets/main-Z8In5K5H.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/models-Db4PX9mf.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-Vbt09jaz.css">
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <div id="hurt"></div>
+    <div id="hud" hidden>
+      <div class="top">
+        <div class="stats">
+          <span class="pill" id="night"></span>
+          <span class="pill pearl" id="pearls"></span>
+          <span class="pill mod" id="mod" hidden></span>
+        </div>
+        <div class="bars">
+          <div class="bar hp"><i id="hpFill"></i><b id="hpText"></b></div>
+          <div class="bar heat"><i id="heatFill"></i><b id="heatText"></b></div>
+          <div class="bar prog" id="prog"></div>
+          <div class="bar boss" id="bossBar" hidden><i id="bossFill"></i><b id="bossText"></b></div>
+        </div>
+        <div class="btns">
+          <button class="icon" id="btnMute" aria-label="Zvuk">🔊</button>
+          <button class="icon" id="btnPause" aria-label="Pauza">⏸</button>
+        </div>
+      </div>
+      <div class="cam">
+        <button class="icon" id="camLook" aria-label="Rozhlédnout se">🔭</button>
+      </div>
+      <div class="actions">
+        <button class="skill" id="skill1" hidden><span></span><i></i></button>
+        <button class="skill" id="skill2" hidden><span></span><i></i></button>
+        <button id="btnFlash" aria-label="Záblesk">
+          <svg viewBox="0 0 100 100"><rect x="4" y="4" width="92" height="92" /><rect id="flashRing" x="4" y="4" width="92" height="92" /></svg>
+          <span>⚡</span><small id="flashLabel"></small>
+        </button>
+      </div>
+      <div id="toast"></div>
+    </div>
+    <div id="courierUI" hidden>
+      <b id="cTitle"></b>
+      <div class="cbar"><i id="cFill"></i></div>
+    </div>
+    <div id="screen"></div>
+    <div id="fps" hidden></div>
+  </body>
+</html>
