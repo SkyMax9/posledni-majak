@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#08142a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="../icon.svg" type="image/svg+xml" />
+    <title>Úžina · The Strait</title>
+    <script type="module" crossorigin src="../assets/uzina-CBuWl5V3.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/models-Db4PX9mf.js">
+    <link rel="modulepreload" crossorigin href="../assets/audio-r0EM3xHz.js">
+    <link rel="stylesheet" crossorigin href="../assets/uzina-nRYjlDZD.css">
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+    <div id="hud" hidden>
+      <div class="l">
+        <div class="res">
+          <span id="hNewts" title="Mloci / Newts"></span>
+          <span id="hPearls" title="Perly / Pearls"></span>
+          <span id="hSpoil" title="Hlušina / Spoil"></span>
+        </div>
+        <button id="hObj"></button>
+      </div>
+      <div class="r">
+        <span id="hAlarm"><svg viewBox="0 0 24 24"><path class="bg" d="M5.64 18.36 A9 9 0 1 1 18.36 18.36"/><path class="arc" d=""/></svg><b></b></span>
+        <button id="bSpeed" aria-label="Rychlost">1×</button>
+        <button id="bPause" aria-label="Pauza"><svg viewBox="0 0 16 16"><rect x="4" y="3" width="3" height="10"/><rect x="9" y="3" width="3" height="10"/></svg></button>
+      </div>
+    </div>
+    <div id="news"></div>
+    <div id="tools" hidden></div>
+    <button id="mark" hidden aria-label="Syndikát"><svg viewBox="0 0 24 24"><path d="M2 15h20l-3 5H5z"/><rect x="7" y="9" width="8" height="6"/><rect x="11" y="4" width="3" height="5"/><circle cx="17" cy="4" r="1.6" opacity=".6"/></svg></button>
+    <div id="shop" hidden></div>
+    <div id="hint"></div>
+    <div id="scr"></div>
+  </body>
+</html>
